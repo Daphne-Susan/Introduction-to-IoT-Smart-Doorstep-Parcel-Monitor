@@ -1,2 +1,37 @@
-# Introduction-to-IoT---Smart-Pet-Feeder
-An Arduino-based IoT-style project that alerts you when a package is left at your door — and lets you mute the alarm with one press until the parcel is removed.
+# 🚪 Smart Doorstep Parcel Monitor
+
+An IoT-style alert system using Arduino, an ultrasonic sensor, buzzer, LED, and push button. Detects when a package is left at your doorstep and alerts you — with a mute button that auto-resets after parcel removal.
+
+## 📦 Features
+- Ultrasonic parcel detection (< 30 cm)
+- LED + buzzer alert
+- One-press mute
+- Auto re-arm after parcel picked up
+- Same hardware as Smart Pet Feeder — just different code
+
+## 🛠 Hardware
+- Arduino Uno/Nano
+- HC-SR04 Ultrasonic Sensor
+- Active Buzzer
+- 5mm Red LED + 330Ω resistor
+- Momentary Push Button
+- Breadboard & jumper wires
+
+## 🔌 Wiring
+| Component | Arduino Pin |
+|-----------|-------------|
+| Trigger (HC-SR04) | D11 |
+| Echo (HC-SR04) | D10 |
+| Buzzer (+) | D5 |
+| LED Anode | D6 |
+| Button | D4 |
+| All GNDs | GND |
+
+## 🧠 Logic Overview
+1. Measure distance every 200ms.
+2. If distance ≤ 30cm → alert ON (LED + buzzer).
+3. Button press → mute buzzer, keep LED on.
+4. If distance > 30cm → reset mute flag, turn off LED.
+
+## 📜 License
+GNU General Public License v3.0
