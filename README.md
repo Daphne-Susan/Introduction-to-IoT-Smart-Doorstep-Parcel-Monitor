@@ -33,5 +33,9 @@ An IoT-style alert system using Arduino, an ultrasonic sensor, buzzer, LED, and 
 3. Button press → mute buzzer, keep LED on.
 4. If distance > 30cm → reset mute flag, turn off LED.
 
+## Circuit
+<img width="1887" height="1230" alt="PBL_Example_Circuit_Diagram" src="https://github.com/user-attachments/assets/cd892601-912d-45f3-b175-3d6e9503ebbf" />
+
+
 ## 📜 License
 GNU General Public License v3.0
