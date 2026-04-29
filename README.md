@@ -7,7 +7,7 @@ An IoT-style alert system using Arduino, an ultrasonic sensor, buzzer, LED, and 
 - LED + buzzer alert
 - One-press mute
 - Auto re-arm after parcel picked up
-- Same hardware as Smart Pet Feeder — just different code
+
 
 ## 🛠 Hardware
 - Arduino Uno/Nano
